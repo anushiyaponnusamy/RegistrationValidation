@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>employee registration form</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+
+<script src="EmployeeValidation.js"></script>
+<style>
+    body{
+        background-color: aquamarine;
+        justify-content: center;
+        text-align: center;
+    }
+    .row{
+        margin: 30px;
+    }
+</style>
+</head>
+<body onload="document.registration.username.focus();">
+<h1>Employee Registration Form</h1>
+
+<form  name='registration' onClick="return formValidation();">
+
+
+
+<div class="row">
+<label for="username">Name:</label>
+<input type="text" name="username" size="50" />
+</div>
+
+<div class="row">
+<label for="address">Address:</label>
+<textarea  name="address" placeholder="enter address"></textarea>
+
+</div>
+<div class="row">
+<label for="country">Country:</label>
+<select name="country">
+<option selected="" value="Default">--Please select a country--</option>
+<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+</select>
+<span id="message" ></span>
+</div>
+<!-- <div class="row">
+<label for="city">City:</label>
+<select name="city">
+<option selected="" value="Default">--Please select a City--</option>
+<option value="NYC">NYC</option>
+<option value="LA">LA</option>
+<option value="LV">LV</option>
+<option value="L">London</option>
+<option value="A">Amsterdam</option>
+</select>
+</div> -->
+<div class="row">
+<label for="mobile">Mobileno:</label>
+<input type="number" name="mobile" size="12" />
+</div>
+<!-- <div class="row">
+<label for="age">Age:</label>
+<input type="number" name="Age" size="12" />
+</div>
+<div class="row">
+<label for="salary">Salary:</label>
+<input type="number" name="salary" size="12" />
+</div>
+<div class="row">
+<label for="role">Role:</label>
+<input type="text" name="role" size="50" /> -->
+<!-- </div>
+<div class="row">
+<label for="state">State:</label>
+<select name="state">
+<option selected="" value="Default">--Please select a State--</option>
+<option value="alabama">Alabama</option>
+<option value="alaska">Alaska</option>
+<option value="arizona">Arizona</option>
+<option value="california">California</option>
+<option value="hawaii">Hawaii</option>
+</select>
+</div> -->
+<div class="row">
+<label for="email">Email:</label>
+<input type="text" name="email" size="50" />
+</div>
+
+
+
+<div class="row">
+<input type="submit" name="submit" value="Submit" />
+</div>
+</form>
+</body>
+</html>
